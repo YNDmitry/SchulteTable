@@ -7,6 +7,7 @@ $(document).ready(function() {
 
 restartTable();
 checkBlock();
+Timer();
 
 function reloadRecord() {
   let sortedRecord = recordArr.sort( (a, b) => a - b );
@@ -15,7 +16,14 @@ function reloadRecord() {
   $(".n3").html((sortedRecord[2]) ? (sortedRecord[2]/100 + " сек.") : " ");
 }
 
-
+function Timer() {
+  $(".start").click(function () {
+    initTimer()
+  })
+  $(".stop").click(function () {
+    stopTimer()
+  })
+}
 
 function restartTable() {
 
@@ -54,13 +62,14 @@ function restartTable() {
 $(".mix").click(function() { restartTable() });
 $(".okbtn").click(function() { restartTable() });
 
+
 function checkBlock() {
 
   $(".block").click(function() {
 
   let clicked = $(this).html();
 
-  if (clicked == 1) initTimer();
+  if (clicked == 1)  initTimer();
 
   if (set.has(clicked)) {
     $(this).html(" ");

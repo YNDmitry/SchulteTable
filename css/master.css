@@ -79,6 +79,7 @@ color: #4a4646;
 
 .recordtable_title {
     font-family: sans-serif;
+    margin-top: 35px;
 }
 
 table .recordTable {
@@ -141,4 +142,29 @@ td {
 .mix:active {
   background: rgb(33,147,90);
   box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+.start {
+  margin-top: 10px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  padding: .8em 1em calc(.8em + 3px);
+  background: rgb(64,199,129);
+  border-radius: 8px;
+}
+
+.stop {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  padding: .8em 1em calc(.8em + 3px);
+  background: rgb(64,199,129);
+  border-radius: 8px;
+}
+
+.btn-wrapper {
+  margin-top: 30px;
 }
