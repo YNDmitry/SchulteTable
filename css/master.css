@@ -1,0 +1,144 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.title {
+font-family: sans-serif;
+color: #4a4646;
+}
+
+.description {
+  width: 400px;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 3px;
+}
+
+
+
+.timer {
+  font-family: sans-serif;
+  margin-top: 10px;
+  color: darkgray;
+}
+
+.table {
+  position: relative;
+}
+
+.table .popup {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  text-align: center;
+  width: 350px;
+  height: 190px;
+  background-color: #86B7FF;
+  border: 1px solid gray;
+  border-radius: 15px;
+  font-family: sans-serif;
+  z-index: 999;
+}
+
+.popup h1 {
+  margin-bottom: 10px;
+}
+
+.popup h3 {
+  margin: 5px 0 15px 0;
+}
+
+
+
+
+
+.okbtn {
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+}
+
+.okbtn:hover {background: rgb(53, 167, 110)}
+
+.okbtn:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+.recordtable_title {
+    font-family: sans-serif;
+}
+
+table .recordTable {
+  width: 400px;
+}
+
+td {
+  height: 35px;
+  font-family: sans-serif;
+  font-size: 20px;
+  background-color: #e4fbdb;
+}
+
+.recordTable tr td:first-child {
+  width: 25px;
+  text-align: right;
+}
+
+.recordTable tr td:nth-child(2) {
+  width: 100px;
+}
+
+.line {
+  flex-shrink: 1;
+  display: flex;
+}
+
+.block {
+  flex-shrink: 1;
+  width: 70px;
+  height: 70px;
+  margin: 5px 5px 5px 5px;
+  border-radius: 5px;
+  line-height: 70px;
+  text-align: center;
+  background-color: #CCCCCC;
+  font-size: 22px;
+}
+
+.line:nth-child(2n) .block:nth-of-type(2n),
+ .line:nth-child(2n - 1) .block:nth-of-type(2n - 1) {
+  background-color:#CCFF66;
+}
+
+.mix {
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+}
+
+.mix:hover {background: rgb(53, 167, 110)}
+
+.mix:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
