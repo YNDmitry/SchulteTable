@@ -121,7 +121,7 @@ td {
 
 .line:nth-child(2n) .block:nth-of-type(2n),
  .line:nth-child(2n - 1) .block:nth-of-type(2n - 1) {
-  background-color:#CCFF66;
+  /* background-color:#CCFF66; */
 }
 
 .mix {
@@ -167,4 +167,6 @@ td {
 
 .btn-wrapper {
   margin-top: 30px;
+  margin-bottom: 10px;
 }
+
